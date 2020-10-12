@@ -1,3 +1,35 @@
+# Modern Portfolio Theory
+
+Let us consider a portfolio  
+
+One of the assumptions in financial modelling is that the return($R$) of a security is a random variable. The standard deviation of the return is considered to be a measure of risk. The relationship between the log return and the simple return is $r_t= log(1+R_t)$ or $R_t=e^{r_t}-1$. Log returns are more useful becuase of the additivity of risks. Lets examine this below.  
+* For mutliperiod ($k$ periods) returns,  $r_t[k]=r_t + r_{t-1} + \ldots + r_{t-k+1}$.
+* $Var(r_t[k]) = Var(r_t) + Var(r_{t-1}) + \ldots + Var(r_{t-k+1})$. This holds true only when $r_i$ are independent.
+
+The expectation value of the return is $\mu = E (R)$. The standard deviation of the return($\sigma$) is considered to be a measure of risk. The return and the standard deviation have the same units.
+
+
+
+### Some rules on random variables:
+For example, consider random variables $X$,$Y$  
+* $E(X+Y)= E(X)+E(Y)$
+* Say $E(X)=\mu_X$, $Var(X)= E[(X_i-\mu_X)^2] = E(X^2)-\mu_X^2$
+* $Var(aX)=a^2Var(X)$
+* $Cov(X,Y)=E[(X-\mu_X)(Y-\mu_Y)]=E(XY)-E(X)E(Y)$
+* $Var(X+Y)=Var(X)+2Cov(X,Y)+Var(Y)$
+* If $X$ and $Y$ are independent, $Cov(X,Y)=0$
+* Correlation = $\frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}$ , $-1 \le Correlation \le 1$
+
+### Portfolio with only two securities
+* Consider two securities $S_1$ and $S_2$, and their expected returns $r_1$ and $r_2$ respectively.
+* The initial value of the portfolio $V(0)=$
+
+
+Question: How to find optimum weights
+
+
+
+
 ```python
 import pandas as pd
 import os
@@ -75,7 +107,7 @@ data_adj_close.plot(figsize=(16,8))
 
 
 
-![png](output_6_1.png)
+![png](output_7_1.png)
 
 
 
@@ -98,7 +130,7 @@ daily_logreturns['AXISBANK'].plot(figsize=(16,8))
 
 
 
-![png](output_8_1.png)
+![png](output_9_1.png)
 
 
 
@@ -114,7 +146,7 @@ daily_logreturns['DABUR'].plot(figsize=(16,8))
 
 
 
-![png](output_9_1.png)
+![png](output_10_1.png)
 
 
 
@@ -130,7 +162,7 @@ daily_logreturns.plot(figsize=(16,8))
 
 
 
-![png](output_10_1.png)
+![png](output_11_1.png)
 
 
 
@@ -161,7 +193,7 @@ daily_logreturns.hist(ax = ax,bins=100)
 
 
 
-![png](output_11_2.png)
+![png](output_12_2.png)
 
 
 
@@ -390,7 +422,7 @@ plot_portfolios(returns,variances)
 ```
 
 
-![png](output_19_0.png)
+![png](output_20_0.png)
 
 
 
@@ -463,5 +495,5 @@ plot_optimum_portfolios(returns,variances)
 ```
 
 
-![png](output_27_0.png)
+![png](output_28_0.png)
 
