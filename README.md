@@ -8,7 +8,8 @@ One of the assumptions in financial modelling is that the return($R$) of a secur
 
 The expectation value of the return is $\mu = E (R)$. The standard deviation of the return($\sigma$) is considered to be a measure of risk. The return and the standard deviation have the same units.
 
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+<!--- ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})  --->
+
 
 ### Some rules on random variables:
 For example, consider random variables $X$,$Y$  
@@ -25,7 +26,7 @@ For example, consider random variables $X$,$Y$
 * The initial value of the portfolio $V(0)=$
 
 
-Question: How to find optimum weights
+Question: How to find optimal weights
 
 
 
