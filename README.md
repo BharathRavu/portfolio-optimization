@@ -16,8 +16,9 @@ One of the assumptions in financial modelling is that the returns of a security 
 ## Background
 Let's consider a portfolio with $N$ securities.
 
-* Portfolio value at time zero, <img src="https://render.githubusercontent.com/render/math?math=V(0)=\sum_{i=1}^N x_i S_i(0)">, where $x_i$ is the number of shares and $S_i(0)$ is the price of the security $i$.   
-* Weights of the securities for the portfolio, $w_i=\frac{x_i S_i(0)}{V(0)}$ such that $\sum_{i=1}^N w_i=1$.  
+* Portfolio value at time zero, <img src="https://render.githubusercontent.com/render/math?math=V(0)=\sum_{i=1}^N x_i S_i(0)">,  where 
+<img src="https://render.githubusercontent.com/render/math?math=x_i"> is the number of shares and $S_i(0)$ is the price of the security $i$.   
+* Weights of the securities for the portfolio, <img src="https://render.githubusercontent.com/render/math?math=V(0)=w_i=\frac{x_i S_i(0)}{V(0)}">  such that $\sum_{i=1}^N w_i=1$.  
 * Return of the portfolio $R_p = \sum_{i=1}^N w_i R_i$, where $R_i$ is the return of security $i$.  
 * Expected return of the portfolio $E(R_p)=\sum_{i=1}^N w_i E(R_i)$   
 * Variance of the portfolio $Var(R_p)=E(R_p^2)-E(R_p)^2$  
